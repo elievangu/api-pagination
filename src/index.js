@@ -6,18 +6,21 @@ import thunkMiddleware from 'redux-thunk';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import * as serviceWorker from './serviceWorker';
-
+import { composeWithDevTools } from 'redux-devtools-extension';
 //local import
 import App from './Components/App';
 import rootReducer from './Reducers/index';
-import './index.css';
+
 
 let store = createStore(
   rootReducer,
-  applyMiddleware(
-    thunkMiddleware,
-    logger
+  composeWithDevTools(
+    applyMiddleware(
+      thunkMiddleware,
+      logger
+    )
   )
+  
 )
 
 const ApiCall = () => {

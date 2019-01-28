@@ -5,11 +5,13 @@ import React from 'react';
 
 const People = ({ peopleSelect }) => {
   return (
-    <button 
-      className="waves-effect waves-light btn" 
-      onClick={peopleSelect}>
-        <i className="material-icons left">face</i>
-    </button>
+    
+      <button 
+        className="waves-effect waves-light btn" 
+        onClick={peopleSelect}>
+          <i className="material-icons left">face</i>
+      </button>
+    
 
   )
 }

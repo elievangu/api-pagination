@@ -5,11 +5,11 @@ import React from 'react'
 
 const Vehicles = ({ vehiclesSelect }) => {
   return (
-    <button 
-      className="waves-effect waves-light btn" 
-      onClick={vehiclesSelect}>
+      <button 
+        className="waves-effect waves-light btn" 
+        onClick={vehiclesSelect}>
         <i className="material-icons left">flight</i>
-    </button>
+      </button>
   )
 }
 
